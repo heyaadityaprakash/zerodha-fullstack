@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import Home from './landing page/home/Home'
 function App() {
 
   return (
     <>
-     
+     <Home/>
     </>
   )
 }
