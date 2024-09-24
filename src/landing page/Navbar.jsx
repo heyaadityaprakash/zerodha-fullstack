@@ -1,16 +1,18 @@
 import React from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-import './Navbar.css'
+import './Navbar.css';
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <div className="container border-bottom bg-white">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="logo.svg" alt="" style={{width:"25%"}}/>
-          </a>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
+            <img src="logo.svg" alt="logo" style={{width:"25%"}} />
+          </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -18,41 +20,40 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to="/signup">
                   Signup
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/product">
                   Products
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/support">
                   Support
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
                   <MenuIcon/>
-                </a>
+                </Link>
               </li>
-              
             </ul>
           </div>
         </div>
