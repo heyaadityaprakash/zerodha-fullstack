@@ -1,7 +1,12 @@
 import React from 'react';
+import Hero from './Hero';
+import RaiseTicket from './RaiseTicket';
 function Support() {
     return ( 
-        <h1>Support</h1>
+        <>
+        <Hero/>
+       <RaiseTicket/>
+       </>
      );
 }
 
